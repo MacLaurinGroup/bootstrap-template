@@ -1,0 +1,23 @@
+body, html{
+    height: 100%;
+    }
+.bg{
+    background-image: url('../images/Petco.jpg') ;
+
+      height: 100%; 
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+}
+.form-container{
+    border: 0px solid #346bf7; padding: 60px 70px; margin-top: 10vh; 
+
+    /* -webkit-box-shadow: -2px 2px 11px 6px rgba(240,27,12,1);
+    -moz-box-shadow: -2px 2px 11px 6px rgba(240,27,12,1);
+    box-shadow: -2px 2px 11px 6px rgba(240,27,12,1); */
+}
+
+

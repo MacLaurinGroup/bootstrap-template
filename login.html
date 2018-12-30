@@ -8,15 +8,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Login Form!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
-
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -24,7 +27,11 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="90px"></a>
+		<div>
+		  <a href="login.html" class="navbar-login-signup active login-link">Login </a><span></span>
+		  <a href="signup.html" class="navbar-login-signup">| Sign Up</a>
+		  </div>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,9 +47,7 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
                 <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
@@ -61,12 +66,12 @@
                 <a class="dropdown-item" href="blog-post.html">Blog Post</a>
               </div>
             </li>
-            <li class="nav-item active dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Other Pages
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item active" href="full-width.html">Full Width Page</a>
+                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
                 <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
                 <a class="dropdown-item" href="faq.html">FAQ</a>
                 <a class="dropdown-item" href="404.html">404</a>
@@ -79,33 +84,26 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Login</h2>
+		<p class="hint-text">We're glad to have you back.</p>
+      <div class="form-group">
+			 <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+		</div>
+      <div class="form-group">
+        	  <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+        </div>
+    </form>
+	<div class="text-center">Need to create an account? <a href="signup.html" class="login-link">Sign Up Here</a></div>
+</div>
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Full Width
-        <small>Subheading</small>
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Full Width</li>
-      </ol>
-
-      <p>Most of Start Bootstrap's unstyled templates can be directly integrated into the Modern Business template. You can view all of our unstyled templates on our website at
-        <a href="http://startbootstrap.com/template-categories/unstyled">http://startbootstrap.com/template-categories/unstyled</a>.</p>
-
-    </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
